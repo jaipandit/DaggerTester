@@ -8,6 +8,6 @@ import android.util.Log;
 public class ApplicationScopeClass {
 
     public ApplicationScopeClass() {
-        Log.i(ApplicationScopeClass.class.getSimpleName(), "Constructor called");
+        Log.e(ApplicationScopeClass.class.getSimpleName(), "Constructor called");
     }
 }

@@ -1,11 +1,8 @@
 package jai.com.daggertester.di.Components;
 
-import android.content.Context;
-
-import javax.inject.Singleton;
-
 import dagger.Component;
 import jai.com.daggertester.di.modules.ApplicationModule;
+import jai.com.daggertester.di.scopes.ApplicationScope;
 import jai.com.daggertester.models.ApplicationScopeClass;
 
 /**
@@ -21,14 +18,14 @@ import jai.com.daggertester.models.ApplicationScopeClass;
  * 2. A Parent must provide getter method for its child subcomponents.
  * 3. A subcomponent has access to all of the parent objects.
  */
-@Singleton
+@ApplicationScope
 @Component(modules = ApplicationModule.class)
 public interface ApplicationComponent {
 
     // Getter for the child subcomponent.
-    GeneralSalesFlowComponent getGeneralSalesFlowComponent();
+    //GeneralSalesFlowComponent getGeneralSalesFlowComponent();
 
-    Context getAppContext();
+    //Context getAppContext();
 
     ApplicationScopeClass getApplicationScopeClass();
 }

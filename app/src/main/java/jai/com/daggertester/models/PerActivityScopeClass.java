@@ -8,6 +8,6 @@ import android.util.Log;
 public class PerActivityScopeClass {
 
     public PerActivityScopeClass() {
-        Log.i(PerActivityScopeClass.class.getSimpleName(), "Per activity object created.");
+        Log.e(PerActivityScopeClass.class.getSimpleName(), "Per activity object created.");
     }
 }
