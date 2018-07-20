@@ -1,6 +1,7 @@
 package jai.com.daggertester.di.Components;
 
 import dagger.Component;
+import jai.com.daggertester.Activities.BaseActivity;
 import jai.com.daggertester.di.modules.ApplicationModule;
 import jai.com.daggertester.di.scopes.ApplicationScope;
 import jai.com.daggertester.models.ApplicationScopeClass;
@@ -27,5 +28,8 @@ public interface ApplicationComponent {
 
     //Context getAppContext();
 
+    // Subgraph.
     ApplicationScopeClass getApplicationScopeClass();
+
+    void inject(BaseActivity baseActivity);
 }

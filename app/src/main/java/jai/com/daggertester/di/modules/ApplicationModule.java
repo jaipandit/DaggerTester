@@ -7,10 +7,4 @@ import jai.com.daggertester.models.ApplicationScopeClass;
 
 @Module
 public class ApplicationModule {
-
-    @ApplicationScope
-    @Provides
-    ApplicationScopeClass getApplicationScopeClass(){
-        return new ApplicationScopeClass();
-    }
 }
